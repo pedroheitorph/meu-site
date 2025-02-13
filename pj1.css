@@ -1,0 +1,11 @@
+h1{
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: green;
+}
+.container{
+    width: 500px;
+    background-color: rgba(35, 63, 59, 0.249);
+    border-radius: 5%;
+    box-shadow: 4px 2px 10px black;
+}
