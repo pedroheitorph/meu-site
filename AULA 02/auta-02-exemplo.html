@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Dinâmica</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Lista de Pessoas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Gênero</th>
+            </tr>
+        </thead>
+        <tbody id="tabela-corpo">
+            <!-- Conteúdo gerado pelo JavaScript -->
+        </tbody>
+    </table>
+
+    <script>
+        // Array de objetos contendo os dados
+        const pessoas = [
+            { nome: "João", idade: 25, genero: "Masculino" },
+            { nome: "Maria", idade: 30, genero: "Feminino" },
+            { nome: "Carlos", idade: 28, genero: "Masculino" },
+            { nome: "Ana", idade: 22, genero: "Feminino" },
+            { nome: "Pedro", idade: 35, genero: "Masculino" },
+            { nome: "Carla", idade: 27, genero: "Feminino" }
+        ];
+
+        // Seleciona o corpo da tabela
+        const tabelaCorpo = document.getElementById("tabela-corpo");
+
+        // Loop para preencher a tabela dinamicamente
+        for (let pessoa of pessoas) {
+            let linha = document.createElement("tr");
+            linha.innerHTML = `<td>${pessoa.nome}</td><td>${pessoa.idade}</td><td>${pessoa.genero}</td>`;
+            tabelaCorpo.appendChild(linha);
+        }
+    </script>
+
+</body>
+</html>
