@@ -1,0 +1,5 @@
+/* Fazer um Readme.md para cada aula e vai subir para o github.
+
+O conteudo dele deve conter todos os itens abordados pela aula
+
+Voce deve buscar no chatgpt formas de escrever em MARKDOWN E ESTILIZAR */
