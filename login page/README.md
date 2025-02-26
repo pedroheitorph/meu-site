@@ -18,7 +18,7 @@ Também tive a parte de aprendizado para estilizar essa página, usando css e js
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login PH</title>
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
